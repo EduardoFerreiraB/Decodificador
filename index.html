@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/6a4a9ae7f5.js" crossorigin="anonymous"></script>
+    <title>Decodificador</title>
+</head>
+<body>
+    <main class="container">
+        <section class="container_section">
+
+            <textarea placeholder="Digite seu texto" class="content-input-text"></textarea>
+
+            <div class="container_buttons">
+                <span><i class="fas fa-exclamation-circle"></i>Apenas letras minúsculas e sem acento.</span>
+                <div class="buttons_decoding">
+                    <button id="button_criptografar">Criptografar</button>
+                    <button id="button_descriptografar">Descriptografar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container_result">
+            <div class="output_decodificado">
+                <p class="output_text" id="output_text"></p>
+                <button id="button_copy">Copiar</button>
+            </div>
+            <div class="container_output_details">
+                <p id="container_text"><i>Nenhuma mensagem criptografada</i></p>
+                <p id="container_sub_text">Digite alguma mensagem para ser Criptografada ou Descriptografada</p>
+            </div>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
